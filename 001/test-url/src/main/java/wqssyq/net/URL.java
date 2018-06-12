@@ -1151,15 +1151,12 @@ public final class URL implements java.io.Serializable {
       String packagePrefix =
           packagePrefixIter.nextToken().trim();
       //TODO zch
-//      log.info("packagePrefix : {}", packagePrefix);
       try {
         String clsName = packagePrefix + "." + protocol +
             ".Handler";
-//        log.info("clsName : {}", clsName);
         Class<?> cls = null;
         try {
           cls = Class.forName(clsName);
-//          log.info("cls : {}", cls);
         } catch (ClassNotFoundException e) {
           ClassLoader cl = ClassLoader.getSystemClassLoader();
           if (cl != null) {
@@ -1169,14 +1166,10 @@ public final class URL implements java.io.Serializable {
         if (cls != null) {
               handler =
                   (java.net.URLStreamHandler) cls.newInstance();
-//          java.net.URLStreamHandler urlStreamHandler =
-//              (java.net.URLStreamHandler) cls.newInstance();
-//          log.info("urlStreamHandler : {}", urlStreamHandler);
 //          log.info("handler : {}", handler);
         }
       } catch (Exception e) {
-        // any number of exceptions can get thrown here
-//        log.error("err", e);
+        log.error("err", e);
       }
     }
 
