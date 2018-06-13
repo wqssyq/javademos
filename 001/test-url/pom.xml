@@ -3,9 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<!-- Your own application should inherit from spring-boot-starter-parent -->
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-samples</artifactId>
-		<version>1.5.12.RELEASE</version>
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-samples</artifactId>-->
+		<!--<version>1.5.12.RELEASE</version>-->
+		<groupId>wqssyq</groupId>
+		<artifactId>demos-parent</artifactId>
+		<version>0.1.1.SNAPSHOT</version>
 	</parent>
 	<artifactId>test-url</artifactId>
 	<name>test-url</name>
@@ -36,6 +39,16 @@
 			<version>1.16.20</version>
 			<!--<scope>test</scope>-->
 		</dependency>
+
+		<dependency>
+			<!--<groupId>org.projectlombok</groupId>-->
+			<!--<artifactId>lombok</artifactId>-->
+			<!--<version>1.16.20</version>-->
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
