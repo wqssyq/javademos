@@ -1,5 +1,14 @@
 # java demos
 
+parent
+		<groupId>wqssyq</groupId>
+		<artifactId>demos-parent</artifactId>
+		<version>0.1.1.SNAPSHOT</version>
+
+```
+mvn install
+```
+
 ## 001
 
 ### test-url
