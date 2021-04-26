@@ -46,7 +46,7 @@
 			<!--<version>1.16.20</version>-->
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.5</version>
+			<version>2.7</version>
 		</dependency>
 
 	</dependencies>
